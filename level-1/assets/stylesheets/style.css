@@ -48,7 +48,7 @@ table {
     box-sizing: border-box;
 }
 .container {
-    max-width: 1100px;
+    max-width: 1150px;
     margin: 0 auto;
 }
 h1 {
@@ -62,6 +62,14 @@ h2 {
 h3 {
     font-size: 29px;
     font-weight: 600;
+}
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+h5 {
+    font-size: 18px;
+    font-weight: 700;
 }
 p {
     font-size: 18px;
@@ -88,14 +96,23 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.col-1-2 {
+    flex: 0 1 48%;
+}
+.col-40 {
+    flex: 0 1 30%;
+}
+.col-60 {
+    flex: 0 1 58%;
+}
 /* header */
 header {
     padding: 20px 0;
     background-color: hsla(212,7%,43%,0.8);
-    position: fixed;
+    position: absolute;
     right: 0;
     left: 0;
-    z-index: 999;
+    z-index: 1;
 }
 .logo {
     text-transform: uppercase;
@@ -134,7 +151,7 @@ video {
 .hero {
     position: absolute;
     width: 100%;
-    height: 99.5%;
+    height: 856px;
     top: 0;
     right: 0;
     background-color: hsla(207,12%,32%, 0.8);
@@ -149,5 +166,109 @@ video {
     font-size: 45px;
 }
 .hero-sub p {
+    font-weight: 600;
+}
+/* first-section */
+.first-section {
+    padding: 40px 0;
+}
+.first-section p {
+    font-size: 15px;
+    color: #A4A4A4;
+}
+.first-text img,p,h3 {
+    margin: 10px 0;
+}
+.first-text {
+    padding: 35px 0;
+}
+.col-image {
+    width: 30%;
+}
+.col-text {
+    width: 70%;
+}
+.sub-flex {
+    display: flex;
+    align-items: flex-start;
+}
+.col-text p {
+    word-spacing: 4px;
+}
+.orange {
+    color: #ED563A;
+}
+.blue {
+    color: #98C3FF;
+}
+.row {
+    margin-bottom: 50px;
+}
+.second-row {
+    padding: 20px 0;
+}
+/* second-section */
+.second-section {
+    background: url("../../assets/images/cta-bg.jpg");
+    padding: 70px 0;
+}
+.second-section p {
+    color: white;
+    margin: 20px 0;
+}
+.second-section h2 {
+    color: #ffffff;
+}
+.first-text p {
+    font-size: 15px;
+    color: #A4A4A4;
+}
+/* third-section */
+.third-section {
+    padding: 30px 0;
+}
+.third-sec-row {
+    align-items: flex-start;
+}
+.third-sec-row h5 {
+    color: #232D38;
+}
+.sub-40 {
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 5px rgba(59, 59, 59, 0.11);
+    margin-bottom: 40px;
+}
+.sub-40 img {
+    margin-right: 15px;
+}
+.third-sec-row .active {
+    color: #ED563A;
+}
+.btn-program {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    background-color: #ED563A;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+.col-60 img {
+    border-radius: 5px;
+}
+.col-60 h5 {
+    margin: 10px 0;
+}
+.col-60 p {
+    color: #A4A4A4;
+    margin: 10px 0;
+}
+.col-60 a {
+    margin: 10px 0;
     font-weight: 600;
 }
