@@ -374,16 +374,14 @@ td {
 
 form {
     background: #fff;
-    color: rgba(36, 34, 34, 0.548);
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     border-radius: 10px;
     padding: 25px;
 }
 input,
 textarea {
     font-family: inherit;
-    display: inline-block;
     border: 1px solid rgba(36, 34, 34, 0.548);
 }
 input[name="name"],
