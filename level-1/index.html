@@ -27,11 +27,10 @@
     </header>
 
     <main>
-        <div class="contain">
-            <div class="video">
-                <video src="assets/images/gym-video.mp4" autoplay loop></video>
-            </div>
-            
+        <div class="video-container">
+            <video src="assets/images/gym-video.mp4" autoplay loop></video>
+        </div>
+        
         <section class="hero">
             <div class="container">
                 <div class="hero-sub text-centre uppercase">
@@ -289,11 +288,13 @@
 
             <div class="form col-50">
                 <form>
-                    <input type="text" placeholder="Your Name*" name="name" required>
-                    <input type="email" placeholder="Your Email*" name="email" required>
-                    <input type="text" placeholder="Subject" name="subject">
-                    <textarea name="message" placeholder="Message" cols="30" rows="8"></textarea>
-                    <a href="#" class="btn">Send Message</a>
+                    <fieldset>
+                        <input class="same-line" type="text" placeholder="Your Name*" name="name" required>
+                        <input class="same-line" type="email" placeholder="Your Email*" name="email" required>
+                        <input type="text" placeholder="Subject" name="subject">
+                        <textarea name="message" placeholder="Message" cols="30" rows="8"></textarea>
+                        <button class="btn">Send Message</button>
+                    </fieldset>
                 </form>
             </div>
 
